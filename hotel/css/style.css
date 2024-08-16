@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "lato_regular";
+    src: url('../assets//font/Lato/Lato-Regular.ttf');
+}
+
+header {
+    width: 100%;
+    height: 461px;
+    background-image: linear-gradient(#1E52B4, #002777);
+    display: flex;
+    justify-content: center;
+}
+
+.layoutGrid {
+    /* border: 1px solid black; */
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topContentHeader {
+    /* border: 1px solid black;     */
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.linksAndButtonHeader {
+    /* border: 1px solid black; */
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksAndButtonHeader button {
+    width: 151px;
+    height: 35px;
+    border-radius: 8px;
+
+    font-family: "Lato_regular";
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.linksHeader {
+    /* border: 1px solid black; */
+    width: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linksHeader a {
+    font-family: "lato_regular";
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.lowerContentHeader {
+    /* border: 1px solid white; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textContentHeader {
+    /* border: 1px solid black; */
+}
+
+.textContentHeader h1 {
+    color: white;
+    font-family: "lato_regular";
+    font-weight: 600;
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.textContentHeader p {
+    color: white;
+    font-family: "lato_regular";
+    font-weight: 400;  
+    font-size: 18px; 
+}
+
+
+
+
+main {
+    margin-top: 75px;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: repeat(4, 260px); /* 4 colunas de 260px */
+    grid-gap: 129px 72px; /* Espaço de 129px vertical e 72px horizontal */
+    justify-content: center; /* Centraliza a grade */
+    margin: 0 auto;
+    padding: 0 72px;
+}
+
+.place-card {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.place-card img {
+    width: 260px;
+    height: 163px;
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para a imagem */
+}
+
+.place-title, .place-description {
+    font-family: "lato_regular";
+    width: 100%; /* Garante que o texto use toda a largura do card */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 0; /* Alinha o texto à esquerda */
+}
+
+.place-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px; /* Espaço abaixo da imagem */
+    color: #333; /* Cor do título */
+}
+
+.place-description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666; /* Cor da descrição */
+    margin-top: 11px; /* Espaço abaixo do título */
+}
+ 
+
+
+
+
+
+.linksAndButtonHeader button {
+    
+    border: 2px solid rgb(255, 255, 255); /* Borda branca semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+    transition: background 0.3s, border-color 0.3s; /* Transição suave */
+}
+
+.linksAndButtonHeader button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Fundo branco semi-transparente mais opaco */
+    border-color: rgba(255, 255, 255, 0.5); /* Borda branca semi-transparente mais opaca */
+}
+
+
+
+
+.advertisement {
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo ao longo da largura do container */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    padding-right: 74px; /* Espaço da borda direita */
+}
+
+.advertisement-text {
+    max-width: calc(100% - 74px); /* Garante que o texto use o espaço restante, respeitando a margem da imagem */
+}
+
+.advertisement img {
+    margin-top: 42px; /* Espaço acima da imagem em relação ao texto */
+    width: 449px; /* Ajusta a largura conforme necessário */
+    height: 300px; /* Ajusta a altura conforme necessário */
+    max-width: 100%; /* Garante que a imagem não exceda o contêiner */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 163px;
+    background-image: linear-gradient(#009C3B, #009538);
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#copyright {
+    width: 100%;
+    height: 50px;
+    background-color: #FFDF00; /* Define a cor de fundo sólida */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Adiciona centralização vertical */
+    color: #2E2736; /* Define a cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Adiciona algum espaço interno */
+}
+
+#copyright p {
+    margin: 0; /* Remove margens padrão do <p> */
+}
+
+#copyright a {
+    font-size: 16px;
+    color: #2E2736; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+#copyright a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
